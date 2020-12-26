@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 //write your code 
 //get
 app.get('/user',(req,res)=>{
-    res.json({message:"Hello "+req.param("name ")});
+    res.json({message:'Hello '+req.param('name ')});
 })
 //post
 app.post('/user',(req,res)=>{

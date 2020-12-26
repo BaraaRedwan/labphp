@@ -7,12 +7,12 @@ app.use(bodyParser.json());
 
 //write your code 
 //get
-app.get('/user',(req,res)=>{
+app.get('/user',(req,res)=>{//'http://localhost:3000/user?name=baraa'
     res.json({message:'Hello '+req.param('name ')});
 })
 //post
 app.post('/user',(req,res)=>{
-    const data = {"message":"hello"};
+    const data = {"message" :"hello baraa , I'm post method"};
     const body = req.body;
     const p = Object.assign(data,body);
     res.json(p);   
